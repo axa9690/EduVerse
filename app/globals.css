@@ -25,3 +25,131 @@ body {
     text-wrap: balance;
   }
 }
+
+.custom-image {
+  width: 500px; /* Set your desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Default styling (for large screens, like desktops) */
+.box-phone{
+  position: absolute;
+  padding: 1.5rem;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Media queries for phones (small screens) */
+@media (max-width: 600px) {
+  .box-phone {
+      position: relative;
+      top: 20%;
+      left: 5%;
+      width: 90%;
+      min-width: auto;
+  }
+}
+/* Media queries for tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .box-tablet {
+      position: absolute;
+      top: 25%; /* Adjust for your preference */
+      left: 5%; /* Top Left Corner */
+      width: 40%; /* Adjust width */
+      margin-bottom: 2rem;
+  }
+
+  .box-tablet-right {
+      position: absolute;
+      top: 25%; /* Adjust for your preference */
+      right: 5%; /* Top Right Corner */
+      width: 40%; /* Adjust width */
+      margin-bottom: 2rem;
+  }
+
+  .box-tablet-bottom-left {
+      position: absolute;
+      bottom: 10%; /* Bottom Left Corner */
+      left: 5%; /* Adjust for your preference */
+      width: 40%; /* Adjust width */
+      margin-bottom: 2rem;
+  }
+
+  .box-tablet-bottom-right {
+      position: absolute;
+      bottom: 10%; /* Bottom Right Corner */
+      right: 5%; /* Adjust for your preference */
+      width: 40%; /* Adjust width */
+      margin-bottom: 2rem;
+  }
+  
+}
+
+/* Media queries for laptops */
+@media (min-width: 1024px) {
+  .box-laptop {
+      position: absolute;
+      top: 30%; /* Adjust for your preference */
+      left: 5%; /* Top Left Corner */
+      width: 300px; /* Fixed width */
+      margin-bottom: 2rem;
+  }
+
+  .box-laptop-right {
+      position: absolute;
+      top: 30%; /* Adjust for your preference */
+      right: 5%; /* Top Right Corner */
+      width: 300px; /* Fixed width */
+      margin-bottom: 2rem;
+  }
+
+  .box-laptop-bottom-left {
+      position: absolute;
+      bottom: 10%; /* Bottom Left Corner */
+      left: 5%; /* Adjust for your preference */
+      width: 300px; /* Fixed width */
+      margin-bottom: 2rem;
+  }
+
+  .box-laptop-bottom-right {
+      position: absolute;
+      bottom: 10%; /* Bottom Right Corner */
+      right: 5%; /* Adjust for your preference */
+      width: 300px; /* Fixed width */
+      margin-bottom: 2rem;
+  }
+}
+
+/* For screens 1024x600 */
+@media (max-width: 1024px) and (max-height: 600px) {
+  .grid-1024x600 {
+      margin-top: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;  /* Changed to space-around for better spacing */
+      padding: 1rem;
+  }
+
+  .box-1024x600 {
+      width: 40%;  /* Increased to 45% to better fill the space */
+      margin-bottom: 1.5rem;  /* Adjusted margin for vertical spacing */
+      min-height: 150px;  /* Optional: Ensures boxes have a minimum height */
+  }
+}
+.empowering{
+  margin-top:0%;
+}
+
+

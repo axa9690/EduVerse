@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        jua: ['Jua', 'sans-serif'], // Add Jua font
+        hanuman: ['Hanuman', 'sans-serif'], 
+      },
     },
   },
   plugins: [],
